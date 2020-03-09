@@ -1,0 +1,27 @@
+#include <iostrem>
+#include <stdlib.h>
+#include <math.h>
+using namespace std;
+
+int main(){
+    float n;
+    float x, y, d;
+    float resta;
+    float divicion;
+    cout<<"Parcero, punto de inicio:"<<endl;
+    cin>> x;
+    cout<<"Parcero, punto de fin:"<<endl;
+    cin>> y;
+    cout<<"Parcero, punto de distancia:"<<endl;
+    cin>> d;
+resta = y-x;
+system ("pause");
+division= resta/d;
+n = ceil(divicion);
+
+cout<<"resultado es"<<n<<endl;
+
+return 0;
+    
+    
+}
