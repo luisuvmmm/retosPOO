@@ -1,0 +1,26 @@
+#include<iostream>
+#include<vector>
+
+using namespace std;
+
+int solution(vector<int>A){
+    int N = A.size();
+    int intersecciones = 0;
+     for(int J = 0; J <= N-2; J++){
+     for(int K = J+1; K <= N-1; K++){
+           int DI = J+A[J];
+           int DD = K-A[K];
+           if(DI >= DD){
+           intersecciones++;
+          
+          }
+        }
+    }
+   
+   return intersecciones;
+}
+
+int main(){
+    vector<int> entrada {1,5,2,1,4,0};
+    cout<<solution(entrada) << endl;
+}
